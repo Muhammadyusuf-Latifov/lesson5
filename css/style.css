@@ -1,0 +1,12 @@
+.containers{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+input{
+    background: url(../img/search.svg) no-repeat ;
+    background-position: 32px 50% ;
+}
+.capital-choose{
+    padding-left: 20px;
+}

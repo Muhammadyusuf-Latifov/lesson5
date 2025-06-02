@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style type="text/tailwindcss"></style>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="py-[24px] shadow-md shadow-blue-500">
+      <div class="containers flex items-center justify-between">
+        <h1 class="text-[24px] text-[#111517] font-extrabold">
+          Where in the world?
+        </h1>
+        <div class="flex items-center gap-[30px]">
+          <button class="flex cursor-pointer items-center gap-[10px]">
+            <img src="./img/Group 3.svg" alt="" />
+            <span class="text-[#111517] text-[16px] font-semibold"
+              >Liked (<span>0</span>)</span
+            >
+          </button>
+
+          <button class="flex cursor-pointer items-center gap-[10px]">
+            <img src="./img/Group 3.svg" alt="" />
+            <span class="text-[#111517] text-[16px] font-semibold"
+              >Saved (<span>0</span>)</span
+            >
+          </button>
+
+          <button class="flex cursor-pointer items-center gap-[10px]">
+            <img src="./img/Group 3.svg" alt="" />
+            <span class="text-[#111517] text-[16px] font-semibold"
+              >Dark Mode</span
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main class="mt-[48px]">
+      <section>
+        <div class="containers">
+          <div class="flex items-center justify-between">
+            <input
+              autocomplete="off"
+              class="search-input focus:border-blue-500 border-[1px] border-slate-300 py-[18px] pl-[74px] w-[480px] outline-none shadow-md text-[18px] rounded-[5px]"
+              type="text"
+              name="search"
+              placeholder="Search for a country…"
+            />
+            <select
+              class="capital-choose focus:border-blue-500 border-[1px] border-slate-300 py-[20px] w-[200px] outline-none shadow-md text-[18px] rounded-[5px]"
+            >
+              <option disabled selected>Filter by Region</option>
+              <option value="all">All</option>
+            </select>
+          </div>
+          <ul
+            class="country-list mt-[48px] flex justify-between flex-wrap gap-5"
+          ></ul>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="./js/country.js"></script>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
